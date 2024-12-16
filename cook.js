@@ -40,3 +40,5 @@ function getClientOrders(client) {
         console.log(`Заказы клиента ${client.name} не найдены.`);
     }
 }
+
+clients.forEach((_, client) => getClientOrders(client));
