@@ -37,3 +37,7 @@ const musicCollection = {
         };
     },
 };
+
+for (const album of musicCollection) {
+    console.log(`${album.title} - ${album.artist} (${album.year})`);
+}
