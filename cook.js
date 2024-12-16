@@ -12,3 +12,5 @@ const dishes = new Map([
     ["Тирамису", "Дмитрий"],
     ["Чизкейк", "Дмитрий"],
 ]);
+
+const clients = new Map();
