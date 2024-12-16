@@ -13,3 +13,11 @@ year: "Год выпуска"
 • Реализуйте кастомный итератор для объекта musicCollection. Итератор должен перебирать альбомы по порядку.
 • Используйте цикл for...of для перебора альбомов в музыкальной коллекции и вывода их на консоль в формате: Название альбома - Исполнитель (Год выпуска)
 */
+
+const musicCollection = {
+    albums: [
+        { title: "Thriller", artist: "Michael Jackson", year: 1982 },
+        { title: "Back in Black", artist: "AC/DC", year: 1980 },
+        { title: "The Dark Side of the Moon", artist: "Pink Floyd", year: 1973 },
+        { title: "Rumours", artist: "Fleetwood Mac", year: 1977 },
+    ],
