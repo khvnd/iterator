@@ -28,3 +28,15 @@ function getChefForDish(dish) {
     const chef = dishes.get(dish);
     return chef ? `${dish} готовит ${chef}` : `Не найдено повара для блюда ${dish}`;
 }
+
+function getClientOrders(client) {
+    const orders = clients.get(client);
+    if (orders) {
+        console.log(`Заказы клиента ${client.name}:`);
+        orders.forEach((dish) => {
+            console.log(`- ${getChefForDish(dish)}`);
+        });
+    } else {
+        console.log(`Заказы клиента ${client.name} не найдены.`);
+    }
+}
