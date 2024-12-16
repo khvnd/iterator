@@ -21,3 +21,19 @@ const musicCollection = {
         { title: "The Dark Side of the Moon", artist: "Pink Floyd", year: 1973 },
         { title: "Rumours", artist: "Fleetwood Mac", year: 1977 },
     ],
+
+    [Symbol.iterator]() {
+        let index = 0;
+        const albums = this.albums;
+
+        return {
+            next() {
+                if (index < albums.length) {
+                    return { value: albums[index++], done: false };
+                } else {
+                    return { done: true };
+                }
+            },
+        };
+    },
+};
