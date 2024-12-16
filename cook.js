@@ -23,3 +23,8 @@ clients.set(clientMaria, ["Суши \"Калифорния\"", "Пицца \"М�
 
 const clientIrina = { name: "Ирина" };
 clients.set(clientIrina, ["Чизкейк"]);
+
+function getChefForDish(dish) {
+    const chef = dishes.get(dish);
+    return chef ? `${dish} готовит ${chef}` : `Не найдено повара для блюда ${dish}`;
+}
